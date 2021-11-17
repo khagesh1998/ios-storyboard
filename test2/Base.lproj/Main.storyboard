@@ -27,17 +27,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lo5-u2-QyQ">
-                                <rect key="frame" x="182" y="220" width="50" height="36"/>
+                                <rect key="frame" x="190.5" y="220" width="33" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="a48-dZ-5Lr"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Add">
+                                <buttonConfiguration key="configuration" style="plain" title="+">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" name="AccentColor"/>
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="addButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="feA-Uo-9he"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -49,6 +52,9 @@
                             <constraint firstItem="lo5-u2-QyQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lQ8-HW-7Ti"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="display" destination="qRL-rM-qqr" id="b7c-99-n9F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
